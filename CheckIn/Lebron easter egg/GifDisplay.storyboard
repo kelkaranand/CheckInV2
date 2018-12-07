@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y9p-c4-PT5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gif View Controller-->
+        <scene sceneID="bAO-vf-ko0">
+            <objects>
+                <viewController id="y9p-c4-PT5" customClass="GifViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SH4-it-cxK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cy6-bO-NbF">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cy6-bO-NbF" firstAttribute="height" secondItem="SH4-it-cxK" secondAttribute="height" id="XEg-nj-soA"/>
+                            <constraint firstItem="cy6-bO-NbF" firstAttribute="centerX" secondItem="Kvd-0k-gNw" secondAttribute="centerX" id="f4s-BA-EGY"/>
+                            <constraint firstItem="cy6-bO-NbF" firstAttribute="width" secondItem="SH4-it-cxK" secondAttribute="width" id="nFq-ui-puZ"/>
+                            <constraint firstItem="cy6-bO-NbF" firstAttribute="centerY" secondItem="Kvd-0k-gNw" secondAttribute="centerY" id="yqN-Da-nCU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kvd-0k-gNw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kTz-gH-Vnp"/>
+                    <connections>
+                        <outlet property="gifView" destination="cy6-bO-NbF" id="ec3-Hk-eNR"/>
+                        <outlet property="mainView" destination="SH4-it-cxK" id="bOL-0u-tTs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEU-nR-7Wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="130"/>
+        </scene>
+    </scenes>
+</document>

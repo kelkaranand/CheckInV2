@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Sq-P5-Z6J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="EjU-S4-JnP">
+            <objects>
+                <viewController id="8Sq-P5-Z6J" customClass="ProfileViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zpb-ip-rJZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVd-4W-hxd">
+                                <rect key="frame" x="0.0" y="70" width="375" height="130.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFl-k3-CFO">
+                                <rect key="frame" x="0.0" y="250.5" width="375" height="130.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-Uo-gKJ">
+                                <rect key="frame" x="0.0" y="431" width="375" height="130"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HVd-4W-hxd" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="20n-z0-gVl"/>
+                            <constraint firstItem="HVd-4W-hxd" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="2wq-JA-82v"/>
+                            <constraint firstItem="FFl-k3-CFO" firstAttribute="top" secondItem="HVd-4W-hxd" secondAttribute="bottom" constant="50" id="9xl-W9-y0w"/>
+                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="Bsy-B9-hKs"/>
+                            <constraint firstItem="FFl-k3-CFO" firstAttribute="width" secondItem="QEA-t4-7mN" secondAttribute="width" id="Lpo-t1-7Yd"/>
+                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="top" secondItem="FFl-k3-CFO" secondAttribute="bottom" constant="50" id="Mt4-f1-H4c"/>
+                            <constraint firstItem="HVd-4W-hxd" firstAttribute="top" secondItem="QEA-t4-7mN" secondAttribute="top" constant="50" id="Rm6-7Q-wuE"/>
+                            <constraint firstItem="FFl-k3-CFO" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="hBa-Wv-VfW"/>
+                            <constraint firstItem="HVd-4W-hxd" firstAttribute="width" secondItem="QEA-t4-7mN" secondAttribute="width" id="hea-TO-vgi"/>
+                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="pGE-oy-Kwm"/>
+                            <constraint firstItem="FFl-k3-CFO" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="rYt-SJ-HPX"/>
+                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="width" secondItem="QEA-t4-7mN" secondAttribute="width" id="weQ-Um-DSB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QEA-t4-7mN"/>
+                    </view>
+                    <connections>
+                        <outlet property="fnameLabel" destination="FFl-k3-CFO" id="zkQ-6o-qXN"/>
+                        <outlet property="idLabel" destination="HVd-4W-hxd" id="VGG-xR-JOA"/>
+                        <outlet property="lnameLabel" destination="mYf-Uo-gKJ" id="QWE-w3-cJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axc-jr-h9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="162"/>
+        </scene>
+    </scenes>
+</document>

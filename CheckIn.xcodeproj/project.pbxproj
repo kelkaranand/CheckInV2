@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		149B8E8921B751A80009ACC3 /* StudentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149B8E8821B751A80009ACC3 /* StudentList.storyboard */; };
+		149B8E8B21B756E10009ACC3 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B8E8A21B756E10009ACC3 /* StudentListViewController.swift */; };
+		149B8E8D21B762700009ACC3 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B8E8C21B762700009ACC3 /* StudentTableViewCell.swift */; };
+		149B8E9021B76D520009ACC3 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149B8E8F21B76D520009ACC3 /* ProfileScreen.storyboard */; };
+		149B8E9221B76E730009ACC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B8E9121B76E730009ACC3 /* ProfileViewController.swift */; };
+		149B8E9521B786DF0009ACC3 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B8E9421B786DF0009ACC3 /* QRScannerViewController.swift */; };
+		149B8E9721B789160009ACC3 /* QRCodeScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149B8E9621B789160009ACC3 /* QRCodeScan.storyboard */; };
+		149B8E9A21B78D970009ACC3 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B8E9921B78D970009ACC3 /* GifViewController.swift */; };
+		149B8E9C21B78E3C0009ACC3 /* GifDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149B8E9B21B78E3C0009ACC3 /* GifDisplay.storyboard */; };
+		149B8E9E21B790030009ACC3 /* lj.gif in Resources */ = {isa = PBXBuildFile; fileRef = 149B8E9D21B790030009ACC3 /* lj.gif */; };
 		14E9945721B58D9E005105A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9945621B58D9E005105A4 /* AppDelegate.swift */; };
-		14E9945921B58D9E005105A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9945821B58D9E005105A4 /* ViewController.swift */; };
+		14E9945921B58D9E005105A4 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9945821B58D9E005105A4 /* LaunchViewController.swift */; };
 		14E9945C21B58D9E005105A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9945A21B58D9E005105A4 /* Main.storyboard */; };
 		14E9945F21B58D9E005105A4 /* CheckIn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14E9945D21B58D9E005105A4 /* CheckIn.xcdatamodeld */; };
 		14E9946121B58D9F005105A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E9946021B58D9F005105A4 /* Assets.xcassets */; };
 		14E9946421B58D9F005105A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9946221B58D9F005105A4 /* LaunchScreen.storyboard */; };
+		14E9946C21B5A3BA005105A4 /* RegistrationCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9946B21B5A3BA005105A4 /* RegistrationCheckViewController.swift */; };
+		14E9946F21B5A637005105A4 /* DeviceRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */; };
+		14E9947221B5E061005105A4 /* InternetConnectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947121B5E061005105A4 /* InternetConnectionTest.swift */; };
+		14E9947421B5E125005105A4 /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947321B5E125005105A4 /* RestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		149B8E8821B751A80009ACC3 /* StudentList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentList.storyboard; sourceTree = "<group>"; };
+		149B8E8A21B756E10009ACC3 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		149B8E8C21B762700009ACC3 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		149B8E8F21B76D520009ACC3 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		149B8E9121B76E730009ACC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		149B8E9421B786DF0009ACC3 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		149B8E9621B789160009ACC3 /* QRCodeScan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeScan.storyboard; sourceTree = "<group>"; };
+		149B8E9921B78D970009ACC3 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		149B8E9B21B78E3C0009ACC3 /* GifDisplay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GifDisplay.storyboard; sourceTree = "<group>"; };
+		149B8E9D21B790030009ACC3 /* lj.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = lj.gif; path = ../../../../lj.gif; sourceTree = "<group>"; };
 		14E9945321B58D9E005105A4 /* CheckIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E9945621B58D9E005105A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14E9945821B58D9E005105A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14E9945821B58D9E005105A4 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		14E9945B21B58D9E005105A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14E9945E21B58D9E005105A4 /* CheckIn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckIn.xcdatamodel; sourceTree = "<group>"; };
 		14E9946021B58D9F005105A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E9946321B58D9F005105A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14E9946521B58D9F005105A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E9946B21B5A3BA005105A4 /* RegistrationCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCheckViewController.swift; sourceTree = "<group>"; };
+		14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceRegistration.storyboard; sourceTree = "<group>"; };
+		14E9947121B5E061005105A4 /* InternetConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionTest.swift; sourceTree = "<group>"; };
+		14E9947321B5E125005105A4 /* RestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +65,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149B8E8621B614C70009ACC3 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				14E9945821B58D9E005105A4 /* LaunchViewController.swift */,
+				14E9945A21B58D9E005105A4 /* Main.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		149B8E8721B751700009ACC3 /* Student List */ = {
+			isa = PBXGroup;
+			children = (
+				149B8E8821B751A80009ACC3 /* StudentList.storyboard */,
+				149B8E8A21B756E10009ACC3 /* StudentListViewController.swift */,
+				149B8E8C21B762700009ACC3 /* StudentTableViewCell.swift */,
+			);
+			path = "Student List";
+			sourceTree = "<group>";
+		};
+		149B8E8E21B76D2A0009ACC3 /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				149B8E8F21B76D520009ACC3 /* ProfileScreen.storyboard */,
+				149B8E9121B76E730009ACC3 /* ProfileViewController.swift */,
+			);
+			path = "Profile Screen";
+			sourceTree = "<group>";
+		};
+		149B8E9321B785EE0009ACC3 /* QR code scan */ = {
+			isa = PBXGroup;
+			children = (
+				149B8E9421B786DF0009ACC3 /* QRScannerViewController.swift */,
+				149B8E9621B789160009ACC3 /* QRCodeScan.storyboard */,
+			);
+			path = "QR code scan";
+			sourceTree = "<group>";
+		};
+		149B8E9821B78D580009ACC3 /* Lebron easter egg */ = {
+			isa = PBXGroup;
+			children = (
+				149B8E9921B78D970009ACC3 /* GifViewController.swift */,
+				149B8E9B21B78E3C0009ACC3 /* GifDisplay.storyboard */,
+			);
+			path = "Lebron easter egg";
+			sourceTree = "<group>";
+		};
 		14E9944A21B58D9E005105A4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +130,39 @@
 		14E9945521B58D9E005105A4 /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
+				149B8E9821B78D580009ACC3 /* Lebron easter egg */,
+				149B8E9321B785EE0009ACC3 /* QR code scan */,
+				149B8E8E21B76D2A0009ACC3 /* Profile Screen */,
+				149B8E8721B751700009ACC3 /* Student List */,
+				149B8E8621B614C70009ACC3 /* Launch Screen */,
+				14E9947021B5E034005105A4 /* Util */,
+				14E9946D21B5A3DF005105A4 /* Device Registration */,
 				14E9945621B58D9E005105A4 /* AppDelegate.swift */,
-				14E9945821B58D9E005105A4 /* ViewController.swift */,
-				14E9945A21B58D9E005105A4 /* Main.storyboard */,
 				14E9946021B58D9F005105A4 /* Assets.xcassets */,
 				14E9946221B58D9F005105A4 /* LaunchScreen.storyboard */,
 				14E9946521B58D9F005105A4 /* Info.plist */,
 				14E9945D21B58D9E005105A4 /* CheckIn.xcdatamodeld */,
 			);
 			path = CheckIn;
+			sourceTree = "<group>";
+		};
+		14E9946D21B5A3DF005105A4 /* Device Registration */ = {
+			isa = PBXGroup;
+			children = (
+				14E9946B21B5A3BA005105A4 /* RegistrationCheckViewController.swift */,
+				14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */,
+			);
+			path = "Device Registration";
+			sourceTree = "<group>";
+		};
+		14E9947021B5E034005105A4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				149B8E9D21B790030009ACC3 /* lj.gif */,
+				14E9947121B5E061005105A4 /* InternetConnectionTest.swift */,
+				14E9947321B5E125005105A4 /* RestHelper.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +223,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149B8E9C21B78E3C0009ACC3 /* GifDisplay.storyboard in Resources */,
+				149B8E9021B76D520009ACC3 /* ProfileScreen.storyboard in Resources */,
+				149B8E8921B751A80009ACC3 /* StudentList.storyboard in Resources */,
 				14E9946421B58D9F005105A4 /* LaunchScreen.storyboard in Resources */,
 				14E9946121B58D9F005105A4 /* Assets.xcassets in Resources */,
+				149B8E9E21B790030009ACC3 /* lj.gif in Resources */,
+				149B8E9721B789160009ACC3 /* QRCodeScan.storyboard in Resources */,
 				14E9945C21B58D9E005105A4 /* Main.storyboard in Resources */,
+				14E9946F21B5A637005105A4 /* DeviceRegistration.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E9945921B58D9E005105A4 /* ViewController.swift in Sources */,
+				149B8E9521B786DF0009ACC3 /* QRScannerViewController.swift in Sources */,
+				149B8E8B21B756E10009ACC3 /* StudentListViewController.swift in Sources */,
+				14E9946C21B5A3BA005105A4 /* RegistrationCheckViewController.swift in Sources */,
+				14E9945921B58D9E005105A4 /* LaunchViewController.swift in Sources */,
 				14E9945F21B58D9E005105A4 /* CheckIn.xcdatamodeld in Sources */,
 				14E9945721B58D9E005105A4 /* AppDelegate.swift in Sources */,
+				149B8E9A21B78D970009ACC3 /* GifViewController.swift in Sources */,
+				14E9947221B5E061005105A4 /* InternetConnectionTest.swift in Sources */,
+				149B8E9221B76E730009ACC3 /* ProfileViewController.swift in Sources */,
+				14E9947421B5E125005105A4 /* RestHelper.swift in Sources */,
+				149B8E8D21B762700009ACC3 /* StudentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

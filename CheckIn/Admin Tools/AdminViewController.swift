@@ -8,5 +8,8 @@
 
 import UIKit
 class ehh: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.title = "Alex"
+    }
 }

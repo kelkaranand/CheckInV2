@@ -105,7 +105,7 @@
                     <navigationItem key="navigationItem" id="it5-05-iGs">
                         <barButtonItem key="rightBarButtonItem" title="Admin tools" id="UtG-Bn-XII">
                             <connections>
-                                <segue destination="5h5-Q3-CEv" kind="show" id="cWJ-9b-L8V"/>
+                                <segue destination="cIC-xT-Kxg" kind="show" id="n9l-qu-GrB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -117,14 +117,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bs-pz-0GU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="537" y="-83"/>
-        </scene>
-        <!--Admin-->
-        <scene sceneID="qWj-7m-lfC">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Admin" id="5h5-Q3-CEv" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zdn-VE-ekb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1402" y="-493"/>
         </scene>
         <!--ProfileScreen-->
         <scene sceneID="u9c-92-Fqf">
@@ -149,6 +141,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mA3-Le-vcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-439" y="-83"/>
+        </scene>
+        <!--Admin Tools-->
+        <scene sceneID="sHw-1c-aBw">
+            <objects>
+                <viewController title="Admin Tools" id="cIC-xT-Kxg" customClass="ehh" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cj-Gj-72m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-SL-KiN">
+                                <rect key="frame" x="16" y="104" width="343" height="658"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCp-8m-sCe">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="115.66666666666667"/>
+                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6Q-96-5DK">
+                                        <rect key="frame" x="0.0" y="135.66666666666666" width="343" height="115.66666666666666"/>
+                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unj-84-nXb">
+                                        <rect key="frame" x="0.0" y="271.33333333333331" width="343" height="115.33333333333331"/>
+                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-uq-J7E">
+                                        <rect key="frame" x="0.0" y="406.66666666666669" width="343" height="115.66666666666669"/>
+                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtH-eC-lyj">
+                                        <rect key="frame" x="0.0" y="542.33333333333337" width="343" height="115.66666666666663"/>
+                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nue-cf-rAd" firstAttribute="trailing" secondItem="Jkx-SL-KiN" secondAttribute="trailing" constant="16" id="0Ho-Cm-d1c"/>
+                            <constraint firstItem="nue-cf-rAd" firstAttribute="bottom" secondItem="Jkx-SL-KiN" secondAttribute="bottom" constant="16" id="etP-Df-QGN"/>
+                            <constraint firstItem="Jkx-SL-KiN" firstAttribute="top" secondItem="nue-cf-rAd" secondAttribute="top" constant="16" id="ghM-df-Pux"/>
+                            <constraint firstItem="Jkx-SL-KiN" firstAttribute="leading" secondItem="nue-cf-rAd" secondAttribute="leading" constant="16" id="vyj-IP-YHB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nue-cf-rAd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOv-Ce-rfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="-344"/>
         </scene>
     </scenes>
 </document>

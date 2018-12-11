@@ -29,7 +29,6 @@
 		14E9947421B5E125005105A4 /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947321B5E125005105A4 /* RestHelper.swift */; };
 		FB85E0FD21C03D8E004C7871 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85E0FC21C03D8E004C7871 /* StudentData.swift */; };
 		FB85E10021C0571C004C7871 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85E0FF21C0571C004C7871 /* AdminViewController.swift */; };
-		FB85E10221C05729004C7871 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB85E10121C05729004C7871 /* Admin.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +56,6 @@
 		14E9947321B5E125005105A4 /* RestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHelper.swift; sourceTree = "<group>"; };
 		FB85E0FC21C03D8E004C7871 /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		FB85E0FF21C0571C004C7871 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
-		FB85E10121C05729004C7871 /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				FB85E0FF21C0571C004C7871 /* AdminViewController.swift */,
-				FB85E10121C05729004C7871 /* Admin.storyboard */,
 			);
 			path = "Admin Tools";
 			sourceTree = "<group>";
@@ -247,7 +244,6 @@
 				14E9946421B58D9F005105A4 /* LaunchScreen.storyboard in Resources */,
 				14E9946121B58D9F005105A4 /* Assets.xcassets in Resources */,
 				149B8E9E21B790030009ACC3 /* lj.gif in Resources */,
-				FB85E10221C05729004C7871 /* Admin.storyboard in Resources */,
 				149B8E9721B789160009ACC3 /* QRCodeScan.storyboard in Resources */,
 				14E9945C21B58D9E005105A4 /* Main.storyboard in Resources */,
 				14E9946F21B5A637005105A4 /* DeviceRegistration.storyboard in Resources */,

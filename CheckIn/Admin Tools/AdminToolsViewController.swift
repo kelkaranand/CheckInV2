@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class AdminViewController: UIViewController {
+class AdminToolsViewController: UIViewController {
     
     @IBOutlet var uploadDataView: UIView!
     @IBOutlet var downloadDataView: UIView!

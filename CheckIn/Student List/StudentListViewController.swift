@@ -14,6 +14,13 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
+    private lazy var roundButton: UIButton = {
+        let roundButton = UIButton(type: .custom)
+        roundButton.setTitleColor(UIColor.orange, for: .normal)
+        roundButton.addTarget(self, action: #selector(openQRCodeScanner), for: UIControl.Event.touchUpInside)
+        return roundButton
+    }()
+    
     var data: Array<StudentData> = []
     
     //Variable used to identify selected student before passing it to the profile view
@@ -39,18 +46,18 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         generateDummyData()
-        
+        view.addSubview(roundButton)
         tableView.dataSource = self
         tableView.delegate = self
         
         self.navigationItem.title = "Hometown Hall"
         
-        let shareButton = UIButton()
-        shareButton.frame = CGRect(x: 0, y: 0, width: view.frame.width-50, height: view.frame.height-20)
-        shareButton.backgroundColor = .yellow
-        shareButton.tintColor = .white
-        shareButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
-        shareButton.setTitle("Send!", for: .normal)
+//        let shareButton = UIButton()
+//        shareButton.frame = CGRect(x: 0, y: 0, width: view.frame.width-50, height: view.frame.height-20)
+//        shareButton.backgroundColor = .yellow
+//        shareButton.tintColor = .white
+//        shareButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+//        shareButton.setTitle("Send!", for: .normal)
         // shareButton.addTarget(self, action: "send:", for: .touchUpInside)
         
 //        // Setup the Search Controller
@@ -60,6 +67,26 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
 //        navigationItem.searchController = searchController
 //        definesPresentationContext = true
         
+    }
+    
+    override func viewWillLayoutSubviews() {
+        roundButton.layer.cornerRadius = roundButton.layer.frame.size.width/2
+        roundButton.backgroundColor = .green
+        roundButton.clipsToBounds = true
+//        roundButton.setImage(UIImage(named:"your-image"), for: .normal)
+        roundButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            roundButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            roundButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            roundButton.widthAnchor.constraint(equalToConstant: 100),
+            roundButton.heightAnchor.constraint(equalToConstant: 100)
+        ])
+    }
+    
+    @objc func openQRCodeScanner() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "QRCodeScan", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "QRScannerViewController") as! QRScannerViewController
+        self.show(vc, sender: self)
     }
     
     //Method to return the number of sections
@@ -119,6 +146,7 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
 //        else {
 //            selectedStudent = data[indexPath.row]
 //        }
+        
         selectedStudent = data[indexPath.row]
         self.performSegue(withIdentifier: "showProfile", sender: self)
     }
@@ -131,6 +159,12 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
             profile.lname = (selectedStudent?.lname)!
             profile.id = (selectedStudent?.id)!
         }
+    }
+    
+    @IBAction func pressedAdminTools(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "AdminTools", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AdminToolsViewController") as! AdminToolsViewController
+        self.show(vc, sender: self)
     }
 //
 //

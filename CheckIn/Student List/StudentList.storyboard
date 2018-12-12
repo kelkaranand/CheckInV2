@@ -105,7 +105,7 @@
                     <navigationItem key="navigationItem" id="it5-05-iGs">
                         <barButtonItem key="rightBarButtonItem" title="Admin tools" id="UtG-Bn-XII">
                             <connections>
-                                <segue destination="cIC-xT-Kxg" kind="show" id="n9l-qu-GrB"/>
+                                <action selector="pressedAdminTools:" destination="2mP-p9-kkM" id="gfN-MO-lPe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -121,8 +121,8 @@
         <!--ProfileScreen-->
         <scene sceneID="u9c-92-Fqf">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProfileScreen" id="LFg-uu-NOa" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R0-25-1L6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ProfileScreen" id="LFg-uu-NOa" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="1400" y="131"/>
         </scene>
@@ -141,126 +141,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mA3-Le-vcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-439" y="-83"/>
-        </scene>
-        <!--Admin Tools-->
-        <scene sceneID="sHw-1c-aBw">
-            <objects>
-                <viewController title="Admin Tools" id="cIC-xT-Kxg" customClass="AdminViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3cj-Gj-72m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-SL-KiN">
-                                <rect key="frame" x="16" y="104" width="343" height="658"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCp-8m-sCe">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="123.66666666666667"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHn-wV-2QW">
-                                                <rect key="frame" x="150" y="51" width="95" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lza-jY-hSb">
-                                                <rect key="frame" x="8" y="8" width="122" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6Q-96-5DK">
-                                        <rect key="frame" x="0.0" y="133.66666666666666" width="343" height="123.66666666666666"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Download Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-dI-Br3">
-                                                <rect key="frame" x="150" y="40.999999999999972" width="117" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGg-Up-UZ1">
-                                                <rect key="frame" x="8" y="9" width="122" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unj-84-nXb">
-                                        <rect key="frame" x="0.0" y="267.33333333333331" width="343" height="123.33333333333331"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qby-qv-ymM">
-                                                <rect key="frame" x="150" y="52" width="39" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wnC-Xz-PFu">
-                                                <rect key="frame" x="8" y="11" width="122" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-uq-J7E">
-                                        <rect key="frame" x="0.0" y="400.66666666666669" width="343" height="123.66666666666669"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epx-Qh-qxG">
-                                                <rect key="frame" x="150" y="51.000000000000057" width="99" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="583-Jj-sMO">
-                                                <rect key="frame" x="8" y="10" width="122" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtH-eC-lyj">
-                                        <rect key="frame" x="0.0" y="534.33333333333337" width="343" height="123.66666666666663"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-tg-zz7">
-                                                <rect key="frame" x="150" y="52" width="100" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nol-Xo-fgo">
-                                                <rect key="frame" x="8" y="10" width="122" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="nue-cf-rAd" firstAttribute="trailing" secondItem="Jkx-SL-KiN" secondAttribute="trailing" constant="16" id="0Ho-Cm-d1c"/>
-                            <constraint firstItem="nue-cf-rAd" firstAttribute="bottom" secondItem="Jkx-SL-KiN" secondAttribute="bottom" constant="16" id="etP-Df-QGN"/>
-                            <constraint firstItem="Jkx-SL-KiN" firstAttribute="top" secondItem="nue-cf-rAd" secondAttribute="top" constant="16" id="ghM-df-Pux"/>
-                            <constraint firstItem="Jkx-SL-KiN" firstAttribute="leading" secondItem="nue-cf-rAd" secondAttribute="leading" constant="16" id="vyj-IP-YHB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="nue-cf-rAd"/>
-                    </view>
-                    <connections>
-                        <outlet property="createEventView" destination="JMc-uq-J7E" id="Ohi-Kf-eeX"/>
-                        <outlet property="downloadDataView" destination="E6Q-96-5DK" id="u67-4z-4gr"/>
-                        <outlet property="eventDetailsView" destination="DtH-eC-lyj" id="M54-Yk-abU"/>
-                        <outlet property="filterView" destination="unj-84-nXb" id="NS7-eR-5HT"/>
-                        <outlet property="uploadDataView" destination="mCp-8m-sCe" id="gwi-xj-acQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vOv-Ce-rfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1877.5999999999999" y="-344.33497536945816"/>
         </scene>
     </scenes>
 </document>

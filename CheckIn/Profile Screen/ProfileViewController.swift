@@ -26,6 +26,4 @@ class ProfileViewController : UIViewController {
         fnameLabel.text = fname
         lnameLabel.text = lname
     }
-    
-    
 }

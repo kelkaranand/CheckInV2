@@ -17,6 +17,13 @@ class QRScannerViewController : UIViewController {
     var qrCodeFrameView: UIView?
     var scan = true
     
+    lazy var returnToTableButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.addTarget(self, action: #selector(returnToStudentList), for: .touchUpInside)
+        button.backgroundColor = .red
+        return button
+    }()
+    
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
                                       AVMetadataObject.ObjectType.code39,
                                       AVMetadataObject.ObjectType.code39Mod43,
@@ -32,13 +39,30 @@ class QRScannerViewController : UIViewController {
                                       AVMetadataObject.ObjectType.qr]
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
         //Reset scanner when view appears
         scan = true
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        returnToTableButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        returnToTableButton.layer.cornerRadius = returnToTableButton.layer.frame.size.width/2
+        returnToTableButton.clipsToBounds = true
+        returnToTableButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(returnToTableButton)
+        NSLayoutConstraint.activate([
+            returnToTableButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            returnToTableButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            returnToTableButton.widthAnchor.constraint(equalToConstant: 100),
+            returnToTableButton.heightAnchor.constraint(equalToConstant: 100)
+            ])
         
         // Get the back-facing camera for capturing videos
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
@@ -99,6 +123,10 @@ class QRScannerViewController : UIViewController {
             scan = false
             print(code)
         }
+    }
+    
+    @objc func returnToStudentList() {
+        navigationController?.popToRootViewController(animated: true)
     }
     
 }

@@ -22,7 +22,22 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-lQ-6jx">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="94.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-WP-ciY">
+                                                <rect key="frame" x="16" y="32" width="311" height="30.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Vke-WP-ciY" secondAttribute="trailing" constant="16" id="01J-Df-Mpc"/>
+                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="centerY" secondItem="Mrs-lQ-6jx" secondAttribute="centerY" id="2e9-dx-Wuo"/>
+                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="leading" secondItem="Mrs-lQ-6jx" secondAttribute="leading" constant="16" id="BTA-8r-Y22"/>
+                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="top" secondItem="Mrs-lQ-6jx" secondAttribute="top" constant="32" id="opN-Ei-nUG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vke-WP-ciY" secondAttribute="bottom" constant="32" id="wfo-xL-PzS"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8W-Er-hlx">
                                         <rect key="frame" x="0.0" y="114.5" width="343" height="94"/>
@@ -30,10 +45,32 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-4X-LQY">
                                         <rect key="frame" x="0.0" y="228.5" width="343" height="94.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-EC-qG7">
+                                                <rect key="frame" x="16" y="32" width="311" height="30.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="LZe-EC-qG7" secondAttribute="trailing" constant="16" id="7LI-kk-SbI"/>
+                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="leading" secondItem="hJ3-4X-LQY" secondAttribute="leading" constant="16" id="HM4-9P-QHA"/>
+                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="centerY" secondItem="hJ3-4X-LQY" secondAttribute="centerY" id="Jda-JJ-dz3"/>
+                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="top" secondItem="hJ3-4X-LQY" secondAttribute="top" constant="32" id="LYk-4a-58g"/>
+                                            <constraint firstAttribute="bottom" secondItem="LZe-EC-qG7" secondAttribute="bottom" constant="32" id="OJu-bj-hPm"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-Bl-X4W">
                                         <rect key="frame" x="0.0" y="343" width="343" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jd-5d-yGL">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="94"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Students to Load"/>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>

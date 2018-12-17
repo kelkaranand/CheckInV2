@@ -12,7 +12,7 @@
         <!--Profile View Controller-->
         <scene sceneID="EjU-S4-JnP">
             <objects>
-                <viewController storyboardIdentifier="Profile" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="currentContext" id="8Sq-P5-Z6J" customClass="ProfileViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="formSheet" id="8Sq-P5-Z6J" customClass="ProfileViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zpb-ip-rJZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.036595565580000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HVd-4W-hxd" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="20n-z0-gVl"/>
                             <constraint firstItem="HVd-4W-hxd" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="2wq-JA-82v"/>
@@ -53,6 +53,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QEA-t4-7mN"/>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="100" height="100"/>
                     <connections>
                         <outlet property="fnameLabel" destination="FFl-k3-CFO" id="zkQ-6o-qXN"/>
                         <outlet property="idLabel" destination="HVd-4W-hxd" id="VGG-xR-JOA"/>

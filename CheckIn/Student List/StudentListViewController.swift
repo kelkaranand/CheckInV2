@@ -17,7 +17,7 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     private lazy var roundButton: UIButton = {
         let roundButton = UIButton(type: .custom)
         roundButton.setTitleColor(UIColor.orange, for: .normal)
-        roundButton.addTarget(self, action: #selector(openQRCodeScanner), for: UIControl.Event.touchUpInside)
+        roundButton.addTarget(self, action: #selector(openQRCodeScanner), for: .touchUpInside)
         return roundButton
     }()
     
@@ -115,8 +115,6 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
 //        }
         
         student = data[indexPath.row]
-
-        
         
         cell.fname.text = student!.fname
         cell.lname.text = student!.lname
@@ -155,9 +153,13 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     {
         if let profile = segue.destination as? ProfileViewController
         {
+            
+            profile.preferredContentSize = CGSize(width: 100, height: 100)
+            
             profile.fname = (selectedStudent?.fname)!
             profile.lname = (selectedStudent?.lname)!
             profile.id = (selectedStudent?.id)!
+            
         }
     }
     

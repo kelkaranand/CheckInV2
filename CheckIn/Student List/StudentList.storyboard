@@ -111,7 +111,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="hX1-PY-291" id="vhr-6A-mXG"/>
-                        <segue destination="LFg-uu-NOa" kind="show" identifier="showProfile" id="XZ9-XM-GLo"/>
+                        <segue destination="LFg-uu-NOa" kind="presentation" identifier="showProfile" id="XZ9-XM-GLo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bs-pz-0GU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,7 +124,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R0-25-1L6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="ProfileScreen" id="LFg-uu-NOa" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="1400" y="131"/>
+            <point key="canvasLocation" x="1384" y="-83"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MVo-Xi-T57">

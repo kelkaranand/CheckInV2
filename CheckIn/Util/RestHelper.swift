@@ -30,6 +30,27 @@ public class RestHelper {
         }
 
     }
+    
+    //Method to make GET REST call
+    class func makeGet(_ url:String, _ params: Dictionary<String, String>) -> String {
+        
+        var request = URLRequest(url: URL(string: urls[url]!)!)
+        request.httpMethod = "GET"
+        request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let (data, _, error) = URLSession.shared.synchronousDataTask(urlrequest: request)
+        if let error = error {
+            return ("API call returned error: \(error)")
+        }
+        else {
+            return String(data: data!, encoding: String.Encoding.utf8)!
+        }
+        
+    }
+    
+    
+    
 }
 
 //Extension to allow synchronous calls

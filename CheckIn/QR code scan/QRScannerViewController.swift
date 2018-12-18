@@ -52,18 +52,6 @@ class QRScannerViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        returnToTableButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        returnToTableButton.layer.cornerRadius = returnToTableButton.layer.frame.size.width/2
-        returnToTableButton.clipsToBounds = true
-        returnToTableButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(returnToTableButton)
-        NSLayoutConstraint.activate([
-            returnToTableButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            returnToTableButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
-            returnToTableButton.widthAnchor.constraint(equalToConstant: 100),
-            returnToTableButton.heightAnchor.constraint(equalToConstant: 100)
-            ])
-        
         // Get the back-facing camera for capturing videos
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
         
@@ -111,6 +99,18 @@ class QRScannerViewController : UIViewController {
             view.addSubview(qrCodeFrameView)
             view.bringSubviewToFront(qrCodeFrameView)
         }
+        
+        returnToTableButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        returnToTableButton.layer.cornerRadius = returnToTableButton.layer.frame.size.width/2
+        returnToTableButton.clipsToBounds = true
+        returnToTableButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(returnToTableButton)
+        NSLayoutConstraint.activate([
+            returnToTableButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            returnToTableButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            returnToTableButton.widthAnchor.constraint(equalToConstant: 100),
+            returnToTableButton.heightAnchor.constraint(equalToConstant: 100)
+            ])
     }
     
     override func didReceiveMemoryWarning() {

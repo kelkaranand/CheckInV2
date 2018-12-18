@@ -12,9 +12,11 @@ import UIKit
 class ProfileViewController : UIViewController {
     
     @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet weak var fnameLabel: UILabel!
-    @IBOutlet weak var lnameLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
     
+    @IBAction func dismissProfile(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     var fname = ""
     var lname = ""
@@ -22,16 +24,9 @@ class ProfileViewController : UIViewController {
     var id = ""
     
     override func viewDidLoad() {
-        idLabel.text = id
-        fnameLabel.text = fname
-        lnameLabel.text = lname
+        // idLabel.text = id
+        nameLabel.text = fname + " " + lname
         navigationController?.setNavigationBarHidden(false, animated: true)
-        preferredContentSize = CGSize(width: view.frame.width/2, height: view.frame.height/2)
+        preferredContentSize = CGSize(width: 1, height: 1)
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        preferredContentSize = CGSize(width: 20, height: 20)
-//    }
-    
 }

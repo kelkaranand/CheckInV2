@@ -147,14 +147,13 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
         
         selectedStudent = data[indexPath.row]
         self.performSegue(withIdentifier: "showProfile", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if let profile = segue.destination as? ProfileViewController
         {
-            
-            profile.preferredContentSize = CGSize(width: 100, height: 100)
             
             profile.fname = (selectedStudent?.fname)!
             profile.lname = (selectedStudent?.lname)!

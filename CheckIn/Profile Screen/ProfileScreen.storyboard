@@ -17,52 +17,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVd-4W-hxd">
-                                <rect key="frame" x="0.0" y="70" width="375" height="130.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIH-VT-vZz">
+                                <rect key="frame" x="47" y="529" width="55" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="dismissProfile:" destination="8Sq-P5-Z6J" eventType="touchUpInside" id="RAx-HG-22m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfc-gS-gBx">
+                                <rect key="frame" x="16" y="20" width="163" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVd-4W-hxd">
+                                <rect key="frame" x="101" y="407" width="133" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFl-k3-CFO">
-                                <rect key="frame" x="0.0" y="250.5" width="375" height="130.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-Uo-gKJ">
-                                <rect key="frame" x="0.0" y="431" width="375" height="130"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFl-k3-CFO" userLabel="nameLabel">
+                                <rect key="frame" x="196" y="20" width="163" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.036595565580000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="HVd-4W-hxd" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="20n-z0-gVl"/>
-                            <constraint firstItem="HVd-4W-hxd" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="2wq-JA-82v"/>
-                            <constraint firstItem="FFl-k3-CFO" firstAttribute="top" secondItem="HVd-4W-hxd" secondAttribute="bottom" constant="50" id="9xl-W9-y0w"/>
-                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="Bsy-B9-hKs"/>
-                            <constraint firstItem="FFl-k3-CFO" firstAttribute="width" secondItem="QEA-t4-7mN" secondAttribute="width" id="Lpo-t1-7Yd"/>
-                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="top" secondItem="FFl-k3-CFO" secondAttribute="bottom" constant="50" id="Mt4-f1-H4c"/>
-                            <constraint firstItem="HVd-4W-hxd" firstAttribute="top" secondItem="QEA-t4-7mN" secondAttribute="top" constant="50" id="Rm6-7Q-wuE"/>
-                            <constraint firstItem="FFl-k3-CFO" firstAttribute="centerX" secondItem="QEA-t4-7mN" secondAttribute="centerX" id="hBa-Wv-VfW"/>
-                            <constraint firstItem="HVd-4W-hxd" firstAttribute="width" secondItem="QEA-t4-7mN" secondAttribute="width" id="hea-TO-vgi"/>
-                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="pGE-oy-Kwm"/>
-                            <constraint firstItem="FFl-k3-CFO" firstAttribute="height" secondItem="QEA-t4-7mN" secondAttribute="height" multiplier="0.2" constant="1" id="rYt-SJ-HPX"/>
-                            <constraint firstItem="mYf-Uo-gKJ" firstAttribute="width" secondItem="QEA-t4-7mN" secondAttribute="width" id="weQ-Um-DSB"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QEA-t4-7mN"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="100" height="100"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="667"/>
                     <connections>
-                        <outlet property="fnameLabel" destination="FFl-k3-CFO" id="zkQ-6o-qXN"/>
                         <outlet property="idLabel" destination="HVd-4W-hxd" id="VGG-xR-JOA"/>
-                        <outlet property="lnameLabel" destination="mYf-Uo-gKJ" id="QWE-w3-cJx"/>
+                        <outlet property="nameLabel" destination="FFl-k3-CFO" id="YeU-2t-FFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axc-jr-h9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="162"/>
+            <point key="canvasLocation" x="116" y="161.46926536731635"/>
         </scene>
     </scenes>
 </document>

@@ -117,7 +117,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YmE-53-lYJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mKW-Mq-M70"/>
+                    <navigationItem key="navigationItem" title="Admin Tools" id="mKW-Mq-M70"/>
                     <connections>
                         <outlet property="createEventView" destination="RT6-wh-0M4" id="C7S-DA-eDg"/>
                         <outlet property="downloadDataView" destination="oXm-en-Tkw" id="4U6-wD-s4C"/>

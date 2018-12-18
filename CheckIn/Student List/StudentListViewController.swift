@@ -60,12 +60,12 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
 //        shareButton.setTitle("Send!", for: .normal)
         // shareButton.addTarget(self, action: "send:", for: .touchUpInside)
         
-//        // Setup the Search Controller
-//        searchController.searchResultsUpdater = self
-//        searchController.obscuresBackgroundDuringPresentation = false
-//        searchController.searchBar.placeholder = "Search Students"
-//        navigationItem.searchController = searchController
-//        definesPresentationContext = true
+        // Setup the Search Controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Students"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
         
     }
     
@@ -96,9 +96,9 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     
     //Method to return the number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if isFiltering() {
-//            return filteredStudents.count
-//        }
+        if isFiltering() {
+            return filteredStudents.count
+        }
         return data.count
     }
     
@@ -107,12 +107,12 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentListCell") as! StudentTableViewCell
         
         var student:StudentData?
-//        if isFiltering() {
-//            student = filteredStudents[indexPath.row]
-//        }
-//        else {
-//            student = data[indexPath.row]
-//        }
+        if isFiltering() {
+            student = filteredStudents[indexPath.row]
+        }
+        else {
+            student = data[indexPath.row]
+        }
         
         student = data[indexPath.row]
         
@@ -138,12 +138,12 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
         In this case, populate selectedStudent and perform segue to profileView
      */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if isFiltering() {
-//            selectedStudent = filteredStudents[indexPath.row]
-//        }
-//        else {
-//            selectedStudent = data[indexPath.row]
-//        }
+        if isFiltering() {
+            selectedStudent = filteredStudents[indexPath.row]
+        }
+        else {
+            selectedStudent = data[indexPath.row]
+        }
         
         selectedStudent = data[indexPath.row]
         self.performSegue(withIdentifier: "showProfile", sender: self)
@@ -167,34 +167,33 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
         let vc = storyboard.instantiateViewController(withIdentifier: "AdminToolsViewController") as! AdminToolsViewController
         self.show(vc, sender: self)
     }
-//
-//
-//    let searchController = UISearchController(searchResultsController: nil)
-//
-//    //Function checks if list has been filtered via search text
-//    func isFiltering() -> Bool {
-//        return searchController.isActive && !searchBarIsEmpty()
-//    }
-//
-//    //Function checks if search text is empty
-//    func searchBarIsEmpty() -> Bool {
-//        // Returns true if the text is empty or nil
-//        return searchController.searchBar.text?.isEmpty ?? true
-//    }
+
+    let searchController = UISearchController(searchResultsController: nil)
+
+    //Function checks if list has been filtered via search text
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+
+    //Function checks if search text is empty
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
     
-//    //Function to create filtered list based on search text
-//    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-//        filteredStudents = data.filter({( student : StudentData) -> Bool in
-//            return (student.fname!.lowercased().contains(searchText.lowercased()) || student.lname!.lowercased().contains(searchText.lowercased()))
-//        })
-//
-//        tableView.reloadData()
-//    }
+    //Function to create filtered list based on search text
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredStudents = data.filter({( student : StudentData) -> Bool in
+            return (student.fname!.lowercased().contains(searchText.lowercased()) || student.lname!.lowercased().contains(searchText.lowercased()))
+        })
+
+        tableView.reloadData()
+    }
     
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-//        headerView.backgroundColor = .red
-//        
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        headerView.backgroundColor = .red
+        
 //        let button1 = UIButton(frame: CGRect(x: view.frame.minX, y: view.frame.minY, width: 100, height: headerView.frame.size.height/2))
 //        button1.titleLabel?.text = "Alex"
 //        button1.backgroundColor = .green
@@ -203,15 +202,15 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
 //        
 //        
 //        headerView.addSubview(button1)
-//        
-//        return headerView
-//    }
+        
+        return headerView
+    }
     
 }
-//
-////Extension updates delegate when search text changes
-//extension StudentListViewController: UISearchResultsUpdating {
-//    func updateSearchResults(for searchController: UISearchController) {
-//        filterContentForSearchText(searchController.searchBar.text!)
-//    }
-//}
+
+//Extension updates delegate when search text changes
+extension StudentListViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}

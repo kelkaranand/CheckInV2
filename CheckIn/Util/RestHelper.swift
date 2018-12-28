@@ -10,8 +10,14 @@ import Foundation
 
 public class RestHelper {
     
-    static let urls = ["Register_Device":"https://dev1-ljff.cs65.force.com/test/services/apexrest/device/register", "Get_Registration_Key":"https://dev1-ljff.cs65.force.com/test/services/apexrest/device",
-                       "Get_Events":"https://dev1-ljff.cs65.force.com/test/services/apexrest/event"] as Dictionary<String,String>
+	static var schoolName = ""
+	static let urls = [
+		"Register_Device":"https://dev1-ljff.cs65.force.com/test/services/apexrest/device/register",
+		"Get_Registration_Key":"https://dev1-ljff.cs65.force.com/test/services/apexrest/device",
+		"Get_Events":"https://dev1-ljff.cs65.force.com/test/services/apexrest/event",
+		"Get_Schools":"dev1-ljff.cs65.force.com/test/services/apexrest/schools",
+		"Get_Students":"dev1-ljff.cs65.force.com/test/services/apexrest/students",
+		"Get_Students_By_School":"dev1-ljff.cs65.force.com/test/services/apexrest/schools/" + schoolName] as Dictionary<String,String>
     
     //Method to make Post REST call
     class func makePost(_ url:String, _ params: Dictionary<String, String>) -> String {

@@ -27,6 +27,7 @@ class ProfileViewController : UIViewController {
         // idLabel.text = id
         nameLabel.text = fname + " " + lname
         navigationController?.setNavigationBarHidden(false, animated: true)
-        preferredContentSize = CGSize(width: 1, height: 1)
+        preferredContentSize = CGSize(width: view.frame.width/2, height: view.frame.height/2)
+        
     }
 }

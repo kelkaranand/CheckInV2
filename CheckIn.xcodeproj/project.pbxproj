@@ -27,6 +27,8 @@
 		14E9946F21B5A637005105A4 /* DeviceRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */; };
 		14E9947221B5E061005105A4 /* InternetConnectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947121B5E061005105A4 /* InternetConnectionTest.swift */; };
 		14E9947421B5E125005105A4 /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947321B5E125005105A4 /* RestHelper.swift */; };
+		FB1C5DCB21DD3A0100992842 /* LoadStudentsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1C5DCA21DD3A0100992842 /* LoadStudentsStoryboard.storyboard */; };
+		FB1C5DCD21DD3A1600992842 /* LoadStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C5DCC21DD3A1600992842 /* LoadStudentsViewController.swift */; };
 		FB85E0FD21C03D8E004C7871 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85E0FC21C03D8E004C7871 /* StudentData.swift */; };
 		FB85E10021C0571C004C7871 /* AdminToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85E0FF21C0571C004C7871 /* AdminToolsViewController.swift */; };
 		FB85E10521C15A92004C7871 /* EventDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB85E10421C15A92004C7871 /* EventDetails.storyboard */; };
@@ -59,6 +61,8 @@
 		14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceRegistration.storyboard; sourceTree = "<group>"; };
 		14E9947121B5E061005105A4 /* InternetConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionTest.swift; sourceTree = "<group>"; };
 		14E9947321B5E125005105A4 /* RestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHelper.swift; sourceTree = "<group>"; };
+		FB1C5DCA21DD3A0100992842 /* LoadStudentsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadStudentsStoryboard.storyboard; sourceTree = "<group>"; };
+		FB1C5DCC21DD3A1600992842 /* LoadStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStudentsViewController.swift; sourceTree = "<group>"; };
 		FB85E0FC21C03D8E004C7871 /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		FB85E0FF21C0571C004C7871 /* AdminToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminToolsViewController.swift; sourceTree = "<group>"; };
 		FB85E10421C15A92004C7871 /* EventDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetails.storyboard; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		14E9945521B58D9E005105A4 /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
+				FB1C5DC921DD39E400992842 /* Load Students */,
 				FB85E10821C18C59004C7871 /* Create Event */,
 				FB85E10321C15A79004C7871 /* Event Details */,
 				FB85E0FE21C056E3004C7871 /* Admin Tools */,
@@ -181,6 +186,15 @@
 				14E9947321B5E125005105A4 /* RestHelper.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		FB1C5DC921DD39E400992842 /* Load Students */ = {
+			isa = PBXGroup;
+			children = (
+				FB1C5DCA21DD3A0100992842 /* LoadStudentsStoryboard.storyboard */,
+				FB1C5DCC21DD3A1600992842 /* LoadStudentsViewController.swift */,
+			);
+			path = "Load Students";
 			sourceTree = "<group>";
 		};
 		FB85E0FE21C056E3004C7871 /* Admin Tools */ = {
@@ -270,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				149B8E9C21B78E3C0009ACC3 /* GifDisplay.storyboard in Resources */,
+				FB1C5DCB21DD3A0100992842 /* LoadStudentsStoryboard.storyboard in Resources */,
 				149B8E9021B76D520009ACC3 /* ProfileScreen.storyboard in Resources */,
 				149B8E8921B751A80009ACC3 /* StudentList.storyboard in Resources */,
 				14E9946421B58D9F005105A4 /* LaunchScreen.storyboard in Resources */,
@@ -319,6 +334,7 @@
 				14E9945F21B58D9E005105A4 /* CheckIn.xcdatamodeld in Sources */,
 				FB85E0FD21C03D8E004C7871 /* StudentData.swift in Sources */,
 				14E9945721B58D9E005105A4 /* AppDelegate.swift in Sources */,
+				FB1C5DCD21DD3A1600992842 /* LoadStudentsViewController.swift in Sources */,
 				149B8E9A21B78D970009ACC3 /* GifViewController.swift in Sources */,
 				FB85E10021C0571C004C7871 /* AdminToolsViewController.swift in Sources */,
 				14E9947221B5E061005105A4 /* InternetConnectionTest.swift in Sources */,

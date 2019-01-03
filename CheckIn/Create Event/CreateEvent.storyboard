@@ -41,7 +41,21 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8W-Er-hlx">
                                         <rect key="frame" x="0.0" y="120.5" width="343" height="100.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FrC-5f-WpO">
+                                                <rect key="frame" x="16" y="32" width="311" height="36.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="FrC-5f-WpO" firstAttribute="leading" secondItem="X8W-Er-hlx" secondAttribute="leading" constant="16" id="Roy-yg-BJz"/>
+                                            <constraint firstAttribute="trailing" secondItem="FrC-5f-WpO" secondAttribute="trailing" constant="16" id="SyL-UA-XRL"/>
+                                            <constraint firstAttribute="bottom" secondItem="FrC-5f-WpO" secondAttribute="bottom" constant="32" id="bLt-xk-Mki"/>
+                                            <constraint firstItem="FrC-5f-WpO" firstAttribute="top" secondItem="X8W-Er-hlx" secondAttribute="top" constant="32" id="zGP-Ot-ZC0"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-4X-LQY">
                                         <rect key="frame" x="0.0" y="241" width="343" height="100.5"/>
@@ -49,7 +63,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-EC-qG7">
                                                 <rect key="frame" x="16" y="32" width="311" height="36.5"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="no"/>
                                             </textField>
                                         </subviews>
@@ -102,7 +116,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="7kY-Ut-dgN"/>
                     <connections>
+                        <outlet property="eventDate" destination="FrC-5f-WpO" id="Lye-Na-PcZ"/>
                         <outlet property="eventName" destination="Vke-WP-ciY" id="zPV-vZ-86n"/>
+                        <outlet property="eventTime" destination="LZe-EC-qG7" id="6z1-LY-Gfd"/>
+                        <outlet property="loadStudentsView" destination="5D4-Bl-X4W" id="pdn-QW-aBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wc1-lX-ROe" userLabel="First Responder" sceneMemberID="firstResponder"/>

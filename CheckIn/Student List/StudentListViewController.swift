@@ -52,14 +52,6 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
         
         self.navigationItem.title = "Hometown Hall"
         
-//        let shareButton = UIButton()
-//        shareButton.frame = CGRect(x: 0, y: 0, width: view.frame.width-50, height: view.frame.height-20)
-//        shareButton.backgroundColor = .yellow
-//        shareButton.tintColor = .white
-//        shareButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
-//        shareButton.setTitle("Send!", for: .normal)
-        // shareButton.addTarget(self, action: "send:", for: .touchUpInside)
-        
         // Setup the Search Controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -70,10 +62,10 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     }
     
     override func viewWillLayoutSubviews() {
-        roundButton.layer.cornerRadius = roundButton.layer.frame.size.width/2
-        roundButton.backgroundColor = .green
+        roundButton.layer.cornerRadius = 5// roundButton.layer.frame.size.width/2
+        roundButton.backgroundColor = .gray
         roundButton.clipsToBounds = true
-//        roundButton.setImage(UIImage(named:"your-image"), for: .normal)
+        roundButton.setImage(UIImage(named:"qr-code"), for: .normal)
         roundButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             roundButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
@@ -193,15 +185,6 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         headerView.backgroundColor = .red
-        
-//        let button1 = UIButton(frame: CGRect(x: view.frame.minX, y: view.frame.minY, width: 100, height: headerView.frame.size.height/2))
-//        button1.titleLabel?.text = "Alex"
-//        button1.backgroundColor = .green
-//        button1.titleLabel?.textAlignment = .center
-//        button1.titleLabel?.textColor = .black
-//        
-//        
-//        headerView.addSubview(button1)
         
         return headerView
     }

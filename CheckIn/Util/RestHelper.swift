@@ -15,7 +15,7 @@ public class RestHelper {
 		"Register_Device":"https://dev1-ljff.cs65.force.com/test/services/apexrest/device/register",
 		"Get_Registration_Key":"https://dev1-ljff.cs65.force.com/test/services/apexrest/device",
 		"Get_Events":"https://dev1-ljff.cs65.force.com/test/services/apexrest/event",
-		"Get_Schools":"http://dev1-ljff.cs65.force.com/test/services/apexrest/schools",
+		"Get_Schools":"https://dev1-ljff.cs65.force.com/test/services/apexrest/schools",
 		"Get_Students":"https://dev1-ljff.cs65.force.com/test/services/apexrest/students",
 		"Get_Students_By_School":"https://dev1-ljff.cs65.force.com/test/services/apexrest/schools/" + schoolName,
 		"Create_Event":"https://dev1-ljff.cs65.force.com/test/services/apexrest/createEvent/"] as Dictionary<String,String>

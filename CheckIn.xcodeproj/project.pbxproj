@@ -27,8 +27,11 @@
 		14E9946F21B5A637005105A4 /* DeviceRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */; };
 		14E9947221B5E061005105A4 /* InternetConnectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947121B5E061005105A4 /* InternetConnectionTest.swift */; };
 		14E9947421B5E125005105A4 /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9947321B5E125005105A4 /* RestHelper.swift */; };
-		FB1C5DCB21DD3A0100992842 /* LoadStudentsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1C5DCA21DD3A0100992842 /* LoadStudentsStoryboard.storyboard */; };
 		FB1C5DCD21DD3A1600992842 /* LoadStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C5DCC21DD3A1600992842 /* LoadStudentsViewController.swift */; };
+		FB1C5DCF21DE984900992842 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C5DCE21DE984900992842 /* UIView.swift */; };
+		FB1C5DD121DE9A4C00992842 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C5DD021DE9A4C00992842 /* UILabel.swift */; };
+		FB1C5DD321DFC6A300992842 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C5DD221DFC6A300992842 /* UIColor.swift */; };
+		FB1C5DD521DFC74300992842 /* IndentedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C5DD421DFC74300992842 /* IndentedTextField.swift */; };
 		FB85E0FD21C03D8E004C7871 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85E0FC21C03D8E004C7871 /* StudentData.swift */; };
 		FB85E10021C0571C004C7871 /* AdminToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85E0FF21C0571C004C7871 /* AdminToolsViewController.swift */; };
 		FB85E10521C15A92004C7871 /* EventDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB85E10421C15A92004C7871 /* EventDetails.storyboard */; };
@@ -61,8 +64,11 @@
 		14E9946E21B5A637005105A4 /* DeviceRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceRegistration.storyboard; sourceTree = "<group>"; };
 		14E9947121B5E061005105A4 /* InternetConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionTest.swift; sourceTree = "<group>"; };
 		14E9947321B5E125005105A4 /* RestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHelper.swift; sourceTree = "<group>"; };
-		FB1C5DCA21DD3A0100992842 /* LoadStudentsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadStudentsStoryboard.storyboard; sourceTree = "<group>"; };
 		FB1C5DCC21DD3A1600992842 /* LoadStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStudentsViewController.swift; sourceTree = "<group>"; };
+		FB1C5DCE21DE984900992842 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FB1C5DD021DE9A4C00992842 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		FB1C5DD221DFC6A300992842 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FB1C5DD421DFC74300992842 /* IndentedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentedTextField.swift; sourceTree = "<group>"; };
 		FB85E0FC21C03D8E004C7871 /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		FB85E0FF21C0571C004C7871 /* AdminToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminToolsViewController.swift; sourceTree = "<group>"; };
 		FB85E10421C15A92004C7871 /* EventDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetails.storyboard; sourceTree = "<group>"; };
@@ -184,6 +190,10 @@
 				149B8E9D21B790030009ACC3 /* lj.gif */,
 				14E9947121B5E061005105A4 /* InternetConnectionTest.swift */,
 				14E9947321B5E125005105A4 /* RestHelper.swift */,
+				FB1C5DCE21DE984900992842 /* UIView.swift */,
+				FB1C5DD021DE9A4C00992842 /* UILabel.swift */,
+				FB1C5DD221DFC6A300992842 /* UIColor.swift */,
+				FB1C5DD421DFC74300992842 /* IndentedTextField.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -191,7 +201,6 @@
 		FB1C5DC921DD39E400992842 /* Load Students */ = {
 			isa = PBXGroup;
 			children = (
-				FB1C5DCA21DD3A0100992842 /* LoadStudentsStoryboard.storyboard */,
 				FB1C5DCC21DD3A1600992842 /* LoadStudentsViewController.swift */,
 			);
 			path = "Load Students";
@@ -284,7 +293,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				149B8E9C21B78E3C0009ACC3 /* GifDisplay.storyboard in Resources */,
-				FB1C5DCB21DD3A0100992842 /* LoadStudentsStoryboard.storyboard in Resources */,
 				149B8E9021B76D520009ACC3 /* ProfileScreen.storyboard in Resources */,
 				149B8E8921B751A80009ACC3 /* StudentList.storyboard in Resources */,
 				14E9946421B58D9F005105A4 /* LaunchScreen.storyboard in Resources */,
@@ -330,9 +338,12 @@
 				149B8E8B21B756E10009ACC3 /* StudentListViewController.swift in Sources */,
 				FB85E10A21C18C72004C7871 /* CreateEventViewController.swift in Sources */,
 				14E9946C21B5A3BA005105A4 /* RegistrationCheckViewController.swift in Sources */,
+				FB1C5DD121DE9A4C00992842 /* UILabel.swift in Sources */,
 				14E9945921B58D9E005105A4 /* LaunchViewController.swift in Sources */,
+				FB1C5DD521DFC74300992842 /* IndentedTextField.swift in Sources */,
 				14E9945F21B58D9E005105A4 /* CheckIn.xcdatamodeld in Sources */,
 				FB85E0FD21C03D8E004C7871 /* StudentData.swift in Sources */,
+				FB1C5DD321DFC6A300992842 /* UIColor.swift in Sources */,
 				14E9945721B58D9E005105A4 /* AppDelegate.swift in Sources */,
 				FB1C5DCD21DD3A1600992842 /* LoadStudentsViewController.swift in Sources */,
 				149B8E9A21B78D970009ACC3 /* GifViewController.swift in Sources */,
@@ -340,6 +351,7 @@
 				14E9947221B5E061005105A4 /* InternetConnectionTest.swift in Sources */,
 				149B8E9221B76E730009ACC3 /* ProfileViewController.swift in Sources */,
 				14E9947421B5E125005105A4 /* RestHelper.swift in Sources */,
+				FB1C5DCF21DE984900992842 /* UIView.swift in Sources */,
 				149B8E8D21B762700009ACC3 /* StudentTableViewCell.swift in Sources */,
 				FB85E10721C15AA7004C7871 /* EventDetailsViewController.swift in Sources */,
 			);

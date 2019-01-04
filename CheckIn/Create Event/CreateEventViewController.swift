@@ -12,6 +12,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var eventName: UITextField!
     @IBOutlet var eventDate: UITextField!
     @IBOutlet var eventTime: UITextField!
+
     @IBOutlet var loadStudentsView: UIView!
     
     fileprivate let datePicker = UIDatePicker()
@@ -20,15 +21,30 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         eventName.delegate = self
-        loadStudentsView.addGestureRecognizer(.init(target: self, action: #selector(self.handleTap(_:))))
-        
+        eventDate.delegate = self
+        eventTime.delegate = self
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        loadStudentsView.addGestureRecognizer(tapGesture)
         showDatePicker()
         showTimePicker()
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        textField.backgroundColor = UIColor(rgb: 0x00FFFF)
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.backgroundColor = .white
+    }
+    
+    
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        // handling code
-        print("alex")
+        let vc = LoadStudentsViewController()
+        vc.modalPresentationStyle = .formSheet
+        vc.storyboard?.instantiateInitialViewController()
+        vc.preferredContentSize = CGSize(width: view.frame.width/2, height: view.frame.height/2)
+        self.present(vc, animated: true, completion: nil)
     }
     
     func setUpToolbar(functionType: Selector) -> UIToolbar {
@@ -67,7 +83,9 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     
     @objc func timePickerFormat(){
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm"
+        formatter.dateFormat = "hh:mm a"
+        formatter.amSymbol = "AM"
+        formatter.pmSymbol = "PM"
         eventTime.text = formatter.string(from: timePicker.date)
         self.view.endEditing(true)
     }

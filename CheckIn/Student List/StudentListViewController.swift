@@ -65,7 +65,8 @@ class StudentListViewController : UIViewController, UITableViewDataSource, UITab
         roundButton.layer.cornerRadius = 5// roundButton.layer.frame.size.width/2
         roundButton.backgroundColor = .gray
         roundButton.clipsToBounds = true
-        roundButton.setImage(UIImage(named:"qr-code"), for: .normal)
+        roundButton.setImage(#imageLiteral(resourceName: "icons8-qr-code-filled-100"), for: .normal)
+        roundButton.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         roundButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             roundButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),

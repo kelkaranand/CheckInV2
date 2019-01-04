@@ -20,34 +20,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hX1-PY-291">
                                 <rect key="frame" x="0.0" y="27" width="375" height="812"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="lNd-E6-MPO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBt-yj-pPX">
-                                            <rect key="frame" x="197" y="5.6666666666666679" width="151" height="33"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <state key="normal" title="LastName"/>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYC-bL-f44">
-                                            <rect key="frame" x="48.666666666666671" y="5.6666666666666679" width="132.33333333333331" height="33"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <state key="normal" title="First Name"/>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.90854063210000002" green="0.54843513460000004" blue="0.98407756980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="MYC-bL-f44" firstAttribute="centerY" secondItem="lNd-E6-MPO" secondAttribute="centerY" id="0sg-2J-Hu1"/>
-                                        <constraint firstItem="MYC-bL-f44" firstAttribute="leading" secondItem="lNd-E6-MPO" secondAttribute="leading" constant="48.670000000000002" id="G8N-Fl-IUN"/>
-                                        <constraint firstItem="MYC-bL-f44" firstAttribute="width" secondItem="lNd-E6-MPO" secondAttribute="width" multiplier="0.35" constant="1" id="cPK-fY-QP0"/>
-                                        <constraint firstAttribute="trailing" secondItem="wBt-yj-pPX" secondAttribute="trailing" constant="27" id="s4J-7D-JpM"/>
-                                        <constraint firstItem="wBt-yj-pPX" firstAttribute="centerY" secondItem="lNd-E6-MPO" secondAttribute="centerY" id="skm-8e-KLz"/>
-                                        <constraint firstItem="wBt-yj-pPX" firstAttribute="width" secondItem="lNd-E6-MPO" secondAttribute="width" multiplier="0.4" constant="1" id="tkc-nR-pas"/>
-                                    </constraints>
-                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentListCell" rowHeight="60" id="VAn-61-JLH" customClass="StudentTableViewCell" customModule="CheckIn" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VAn-61-JLH" id="ucA-bB-nEv">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.666666666666664"/>

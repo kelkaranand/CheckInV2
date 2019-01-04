@@ -20,7 +20,7 @@ class QRScannerViewController : UIViewController {
     lazy var returnToTableButton: UIButton = {
         let button = UIButton(type: .custom)
         button.addTarget(self, action: #selector(returnToStudentList), for: .touchUpInside)
-        button.backgroundColor = .red
+        button.backgroundColor = .gray
         return button
     }()
     
@@ -101,8 +101,10 @@ class QRScannerViewController : UIViewController {
         }
         
         returnToTableButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        returnToTableButton.layer.cornerRadius = returnToTableButton.layer.frame.size.width/2
+        returnToTableButton.layer.cornerRadius = 5
         returnToTableButton.clipsToBounds = true
+        returnToTableButton.setImage(#imageLiteral(resourceName: "icons8-menu-filled-100"), for: .normal)
+        returnToTableButton.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         returnToTableButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(returnToTableButton)
         NSLayoutConstraint.activate([
@@ -110,7 +112,7 @@ class QRScannerViewController : UIViewController {
             returnToTableButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
             returnToTableButton.widthAnchor.constraint(equalToConstant: 100),
             returnToTableButton.heightAnchor.constraint(equalToConstant: 100)
-            ])
+        ])
     }
     
     override func didReceiveMemoryWarning() {

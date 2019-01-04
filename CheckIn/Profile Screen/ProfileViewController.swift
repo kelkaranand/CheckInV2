@@ -12,8 +12,7 @@ import UIKit
 class ProfileViewController : UIViewController {
     
     @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet var nameLabel: UILabel!
-    
+    @IBOutlet var checkInLabel: UILabel!
     @IBAction func dismissProfile(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -25,7 +24,7 @@ class ProfileViewController : UIViewController {
     
     override func viewDidLoad() {
         // idLabel.text = id
-        nameLabel.text = fname + " " + lname
+        checkInLabel.text = "Check In \(fname) \(lname)"
         navigationController?.setNavigationBarHidden(false, animated: true)
         preferredContentSize = CGSize(width: view.frame.width/2, height: view.frame.height/2)
         

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f4V-Cz-h5o">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,22 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Create Event View Controller-->
+        <!--Create Event-->
         <scene sceneID="QUe-y3-95k">
             <objects>
                 <viewController storyboardIdentifier="CreateEvent" id="ogN-8X-rlp" customClass="CreateEventViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5m-tt-rX9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-KI-Aye">
-                                <rect key="frame" x="16" y="80" width="343" height="462"/>
+                                <rect key="frame" x="20" y="120" width="728" height="679"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-lQ-6jx">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="728" height="155"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-WP-ciY">
-                                                <rect key="frame" x="16" y="32" width="311" height="36.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-WP-ciY" customClass="IndentedTextField" customModule="CheckIn" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="728" height="155"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -32,18 +32,18 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Vke-WP-ciY" secondAttribute="trailing" constant="16" id="01J-Df-Mpc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vke-WP-ciY" secondAttribute="trailing" id="01J-Df-Mpc"/>
                                             <constraint firstItem="Vke-WP-ciY" firstAttribute="centerY" secondItem="Mrs-lQ-6jx" secondAttribute="centerY" id="2e9-dx-Wuo"/>
-                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="leading" secondItem="Mrs-lQ-6jx" secondAttribute="leading" constant="16" id="BTA-8r-Y22"/>
-                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="top" secondItem="Mrs-lQ-6jx" secondAttribute="top" constant="32" id="opN-Ei-nUG"/>
-                                            <constraint firstAttribute="bottom" secondItem="Vke-WP-ciY" secondAttribute="bottom" constant="32" id="wfo-xL-PzS"/>
+                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="leading" secondItem="Mrs-lQ-6jx" secondAttribute="leading" id="BTA-8r-Y22"/>
+                                            <constraint firstItem="Vke-WP-ciY" firstAttribute="top" secondItem="Mrs-lQ-6jx" secondAttribute="top" id="opN-Ei-nUG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vke-WP-ciY" secondAttribute="bottom" id="wfo-xL-PzS"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8W-Er-hlx">
-                                        <rect key="frame" x="0.0" y="120.5" width="343" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="175" width="728" height="154.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FrC-5f-WpO">
-                                                <rect key="frame" x="16" y="32" width="311" height="36.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FrC-5f-WpO" customClass="IndentedTextField" customModule="CheckIn" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="728" height="154.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -51,17 +51,17 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="FrC-5f-WpO" firstAttribute="leading" secondItem="X8W-Er-hlx" secondAttribute="leading" constant="16" id="Roy-yg-BJz"/>
-                                            <constraint firstAttribute="trailing" secondItem="FrC-5f-WpO" secondAttribute="trailing" constant="16" id="SyL-UA-XRL"/>
-                                            <constraint firstAttribute="bottom" secondItem="FrC-5f-WpO" secondAttribute="bottom" constant="32" id="bLt-xk-Mki"/>
-                                            <constraint firstItem="FrC-5f-WpO" firstAttribute="top" secondItem="X8W-Er-hlx" secondAttribute="top" constant="32" id="zGP-Ot-ZC0"/>
+                                            <constraint firstItem="FrC-5f-WpO" firstAttribute="leading" secondItem="X8W-Er-hlx" secondAttribute="leading" id="Roy-yg-BJz"/>
+                                            <constraint firstAttribute="trailing" secondItem="FrC-5f-WpO" secondAttribute="trailing" id="SyL-UA-XRL"/>
+                                            <constraint firstAttribute="bottom" secondItem="FrC-5f-WpO" secondAttribute="bottom" id="bLt-xk-Mki"/>
+                                            <constraint firstItem="FrC-5f-WpO" firstAttribute="top" secondItem="X8W-Er-hlx" secondAttribute="top" id="zGP-Ot-ZC0"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-4X-LQY">
-                                        <rect key="frame" x="0.0" y="241" width="343" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="728" height="155"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-EC-qG7">
-                                                <rect key="frame" x="16" y="32" width="311" height="36.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-EC-qG7" customClass="IndentedTextField" customModule="CheckIn" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="728" height="155"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="no"/>
@@ -69,36 +69,40 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="LZe-EC-qG7" secondAttribute="trailing" constant="16" id="7LI-kk-SbI"/>
-                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="leading" secondItem="hJ3-4X-LQY" secondAttribute="leading" constant="16" id="HM4-9P-QHA"/>
+                                            <constraint firstAttribute="trailing" secondItem="LZe-EC-qG7" secondAttribute="trailing" id="7LI-kk-SbI"/>
+                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="leading" secondItem="hJ3-4X-LQY" secondAttribute="leading" id="HM4-9P-QHA"/>
                                             <constraint firstItem="LZe-EC-qG7" firstAttribute="centerY" secondItem="hJ3-4X-LQY" secondAttribute="centerY" id="Jda-JJ-dz3"/>
-                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="top" secondItem="hJ3-4X-LQY" secondAttribute="top" constant="32" id="LYk-4a-58g"/>
-                                            <constraint firstAttribute="bottom" secondItem="LZe-EC-qG7" secondAttribute="bottom" constant="32" id="OJu-bj-hPm"/>
+                                            <constraint firstItem="LZe-EC-qG7" firstAttribute="top" secondItem="hJ3-4X-LQY" secondAttribute="top" id="LYk-4a-58g"/>
+                                            <constraint firstAttribute="bottom" secondItem="LZe-EC-qG7" secondAttribute="bottom" id="OJu-bj-hPm"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-Bl-X4W">
-                                        <rect key="frame" x="0.0" y="361.5" width="343" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="524.5" width="728" height="154.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jd-5d-yGL">
-                                                <rect key="frame" x="113" y="35.5" width="117" height="30"/>
-                                                <state key="normal" title="Students to Load"/>
-                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Students to Load" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mxj-d3-YCT">
+                                                <rect key="frame" x="16" y="32" width="696" height="90.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="6Jd-5d-yGL" firstAttribute="centerX" secondItem="5D4-Bl-X4W" secondAttribute="centerX" id="oFJ-U1-VkL"/>
-                                            <constraint firstItem="6Jd-5d-yGL" firstAttribute="centerY" secondItem="5D4-Bl-X4W" secondAttribute="centerY" id="ph4-7w-Sed"/>
+                                            <constraint firstItem="Mxj-d3-YCT" firstAttribute="leading" secondItem="5D4-Bl-X4W" secondAttribute="leading" constant="16" id="0pH-OG-3o8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mxj-d3-YCT" secondAttribute="trailing" constant="16" id="YJd-A3-Sca"/>
+                                            <constraint firstItem="Mxj-d3-YCT" firstAttribute="top" secondItem="5D4-Bl-X4W" secondAttribute="top" constant="32" id="izp-O7-CSk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mxj-d3-YCT" secondAttribute="bottom" constant="32" id="sdq-Ef-nXz"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okl-VK-pTQ">
-                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="949" width="768" height="75"/>
                                 <color key="backgroundColor" red="0.94169279770000003" green="0.9510164887" blue="0.9510164887" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="ZOC-mJ-bBp"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Create Event"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36470589040000001" green="0.066666670139999995" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,20 +110,20 @@
                             <constraint firstItem="H14-ok-Uhh" firstAttribute="trailing" secondItem="okl-VK-pTQ" secondAttribute="trailing" id="4qH-NC-oAC"/>
                             <constraint firstItem="okl-VK-pTQ" firstAttribute="leading" secondItem="H14-ok-Uhh" secondAttribute="leading" id="5TB-nP-PsG"/>
                             <constraint firstItem="H14-ok-Uhh" firstAttribute="bottom" secondItem="okl-VK-pTQ" secondAttribute="bottom" id="9Rn-ls-oEf"/>
-                            <constraint firstItem="okl-VK-pTQ" firstAttribute="top" secondItem="5D4-Bl-X4W" secondAttribute="bottom" constant="50" id="LcF-Kb-Alu"/>
-                            <constraint firstItem="qCx-KI-Aye" firstAttribute="top" secondItem="H14-ok-Uhh" secondAttribute="top" constant="16" id="Vyt-ft-P0H"/>
+                            <constraint firstItem="qCx-KI-Aye" firstAttribute="top" secondItem="H14-ok-Uhh" secondAttribute="top" constant="50" id="Vyt-ft-P0H"/>
                             <constraint firstItem="qCx-KI-Aye" firstAttribute="leading" secondItem="n5m-tt-rX9" secondAttribute="leadingMargin" id="b27-F5-OIc"/>
                             <constraint firstItem="qCx-KI-Aye" firstAttribute="trailing" secondItem="n5m-tt-rX9" secondAttribute="trailingMargin" id="eoo-4R-ttj"/>
                             <constraint firstItem="okl-VK-pTQ" firstAttribute="centerX" secondItem="H14-ok-Uhh" secondAttribute="centerX" id="lrk-WX-i0k"/>
+                            <constraint firstItem="okl-VK-pTQ" firstAttribute="top" secondItem="qCx-KI-Aye" secondAttribute="bottom" constant="150" id="qqS-aI-ruW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H14-ok-Uhh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7kY-Ut-dgN"/>
+                    <navigationItem key="navigationItem" title="Create Event" id="7kY-Ut-dgN"/>
                     <connections>
                         <outlet property="eventDate" destination="FrC-5f-WpO" id="Lye-Na-PcZ"/>
                         <outlet property="eventName" destination="Vke-WP-ciY" id="zPV-vZ-86n"/>
                         <outlet property="eventTime" destination="LZe-EC-qG7" id="6z1-LY-Gfd"/>
-                        <outlet property="loadStudentsView" destination="5D4-Bl-X4W" id="pdn-QW-aBB"/>
+                        <outlet property="loadStudentsView" destination="5D4-Bl-X4W" id="9e5-Du-utZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wc1-lX-ROe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,7 +136,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f4V-Cz-h5o" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQR-Ol-5dx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
